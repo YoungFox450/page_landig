@@ -1,0 +1,657 @@
+ @import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Cherry+Bomb+One&family=Fascinate+Inline&display=swap');
+
+
+
+ /* Reset de base */
+
+ * {
+
+     box-sizing: border-box;
+
+     margin: 0;
+
+     padding: 0;
+
+ }
+
+
+
+ body {
+
+     font-family: sans-serif;
+
+
+
+ }
+
+
+
+ header {
+
+     display: flex;
+
+     justify-content: center;
+
+     align-items: center;
+
+     background: lab(47.82% 6.22 -0.22);
+
+     position: sticky;
+
+     top: 0;
+
+     margin: 0;
+
+     gap: 0;
+
+     padding: 0;
+
+ }
+
+
+
+ .nav {
+
+     display: grid;
+
+     /* On définit deux colonnes qui s'adaptent juste à leur contenu */
+
+     grid-template-columns: auto auto;
+
+     grid-template-rows: 6rem;
+
+     align-items: center;
+
+
+
+     /* LA MAGIE EST ICI : */
+
+     justify-content: space-between;
+
+
+
+     width: 100%;
+
+     max-width: 1200px;
+
+     /* Optionnel : pour éviter que le menu soit trop loin sur écran géant */
+
+     margin: 0 auto;
+
+     /* Centre le bloc nav si tu as mis une max-width */
+
+     padding: 0 20px;
+
+     /* Petite marge de sécurité sur les côtés */
+
+ }
+
+
+
+ .nav ul {
+
+     display: flex;
+
+     justify-content: center;
+
+     align-items: center;
+
+     list-style: none;
+
+     gap: 40px;
+
+     padding: 0;
+
+ }
+
+
+
+ .nav ul a {
+
+     text-decoration: none;
+
+     color: black;
+
+     font-weight: 800;
+
+     transition: 500ms;
+
+     padding: 8px;
+
+     display: inline-block;
+
+     outline: 2px solid transparent;
+
+     cursor: pointer;
+
+ }
+
+
+
+ .nav ul a:hover {
+
+     color: rgb(117, 53, 53);
+
+     outline: 2px solid white;
+
+     background: black;
+
+     padding: 8px;
+
+     border-radius: 16px
+ }
+
+
+
+ #logo {
+
+     display: inline-block;
+
+     /* Pour qu'il respecte bien sa taille de texte */
+
+     width: fit-content;
+
+     font-family: "Cherry Bomb One";
+
+     font-size: 2.3em;
+
+     color: rgb(117, 53, 53);
+
+     text-decoration: none;
+
+     cursor: pointer;
+
+ }
+
+
+
+ .titre {
+
+     grid-area: titre;
+
+     font-family: "Fascinate Inline";
+
+     display: flex;
+
+     align-items: center;
+
+     justify-content: center;
+
+     background: rgb(117, 55, 50);
+
+     border: 1px solid white;
+
+     /*border-top-left-radius: 20px;
+
+    border-top-right-radius: 20px;*/
+
+ }
+
+
+
+ .titre h1 {
+
+     font-size: 6rem;
+
+     color: lab(47.8% 6.22 -0.22);
+
+ }
+
+
+
+ .titre h1 span {
+
+     color: aqua;
+
+ }
+
+
+
+ .main {
+
+     display: grid;
+
+     grid-template-columns: 1fr;
+
+     grid-template-rows: 3fr 3fr 1fr 3fr 2fr;
+
+ }
+
+
+
+ .fr-1 {
+
+     display: grid;
+
+     grid-template-columns: 2fr 1fr;
+
+     grid-template-rows: 1fr;
+
+     align-items: center;
+
+     justify-items: center;
+
+     gap: 0;
+
+     margin: 0;
+
+     padding: 0;
+
+ }
+
+
+
+ .fr-1 img {
+
+     max-width: 100%;
+
+     padding: 0;
+
+     margin: 0;
+
+ }
+
+
+
+ .fr-1 div {
+
+     padding: 10px 30px;
+
+     background: lab(32.89% 8.13 -0.27);
+
+     height: 100%;
+
+     width: 100%;
+
+     display: flex;
+
+     flex-direction: column;
+
+     justify-content: center;
+
+     align-items: center;
+
+     gap: 3rem;
+
+     border: 1px solid white;
+
+ }
+
+
+
+ .fr-1 div h2 {
+
+     font-family: "Cherry Bomb One";
+
+     font-size: 4rem;
+
+     font-weight: bolder;
+
+
+
+ }
+
+
+
+ .fr-1 div p {
+
+     font-size: 1.4rem;
+
+     border-left: 5px solid #7c6e72;
+
+     padding-left: 20px;
+
+ }
+
+
+
+ .fr-2 {
+
+     display: grid;
+
+     grid-template-columns: repeat(3, 1fr);
+
+     grid-template-rows: 1fr;
+
+     align-items: center;
+
+     justify-items: center;
+
+     gap: 0;
+
+     margin: 0;
+
+     padding: 0;
+
+ }
+
+
+
+ .fr-2 img {
+
+     max-width: 100%;
+
+     padding: 0;
+
+     margin: 0;
+
+ }
+
+
+
+ .fr-2 div {
+
+     padding: 10px 30px;
+
+     background: lab(32.89% 8.13 -0.27);
+
+     height: 100%;
+
+     width: 100%;
+
+     display: flex;
+
+     flex-direction: column;
+
+     justify-content: center;
+
+     align-items: center;
+
+     gap: 3rem;
+
+     border: 1px solid white;
+
+ }
+
+
+
+ .fr-2 div h2 {
+
+     font-family: "Cherry Bomb One";
+
+     font-size: 4rem;
+
+     font-weight: bolder;
+
+ }
+
+
+
+ .fr-2 div p {
+
+     font-size: 1.4rem;
+
+     border-left: 5px solid #7c6e72;
+
+     padding-left: 20px;
+
+ }
+
+
+
+ .fr-3 {
+
+     display: grid;
+
+     grid-template-columns: 1fr 2fr;
+
+     grid-template-rows: 1fr;
+
+     align-items: center;
+
+     justify-items: center;
+
+     gap: 0;
+
+     margin: 0;
+
+     padding: 0;
+
+ }
+
+
+
+ .fr-3 img {
+
+     max-width: 100%;
+
+     padding: 0;
+
+     margin: 0;
+
+ }
+
+
+
+ .fr-3 div {
+
+     background: lab(32.89% 8.13 -0.27);
+
+     height: 100%;
+
+     width: 100%;
+
+     display: flex;
+
+     flex-direction: column;
+
+     align-content: center;
+
+     justify-content: center;
+
+     gap: 18px;
+
+     padding: 0 30px;
+
+     border: 1px solid white;
+
+ }
+
+
+
+ .fr-3 div h2 {
+
+     font-family: "Cherry Bomb One";
+
+     font-size: 4rem;
+
+     font-weight: bolder;
+
+ }
+
+
+
+ .fr-3 div h4 {
+
+     font-family: "Cherry Bomb One";
+
+     font-size: 2rem;
+
+     font-weight: bolder;
+
+ }
+
+
+
+ .fr-3 div p {
+
+     font-size: 1.4rem;
+
+     border-left: 5px solid #7c6e72;
+
+     padding-left: 20px;
+
+ }
+
+
+
+ .fr-3 div hr {
+
+     color: ;
+
+ }
+
+
+
+ .fr-4 {
+
+     display: flex;
+
+     align-items: center;
+
+     justify-content: center;
+
+     background: aqua;
+
+     padding: 20rem;
+
+     border: 1px solid white;
+
+ }
+
+
+
+ .fr-4 div {
+
+     display: flex;
+
+     flex-direction: column;
+
+     justify-content: center;
+
+     align-items: center;
+
+     gap: 30px;
+
+ }
+
+
+
+ .fr-4 div p {
+
+     font-size: 1.2rem;
+
+ }
+
+
+
+ .fr-4 div h2 {
+
+     font-family: "Cherry Bomb One";
+
+     font-size: 4rem;
+
+     font-weight: bolder;
+
+ }
+
+
+
+ .fr-4 div a {
+
+     background-color: #7c6e72;
+
+     text-decoration: none;
+
+     padding: 20px;
+
+     border-radius: 20px;
+
+     display: inline-block;
+
+     color: black;
+
+     font-weight: 700;
+
+     font-size: 1.2rem;
+
+     transition: 500ms ease-in;
+
+ }
+
+
+
+ .fr-4 div a:hover {
+
+     color: gray;
+
+     background-color: white;
+
+     box-shadow: 0 0 20px 3px black;
+
+ }
+
+
+
+
+
+
+
+
+
+ footer {
+
+     display: grid;
+
+     justify-items: center;
+
+     align-items: center;
+
+     height: 200px;
+
+     position: relative;
+
+     top: 0;
+
+     background: lab(47.82% 6.22 -0.22);
+
+     border: 1px solid white;
+
+ }
+
+
+
+ footer hr {
+
+     border: none;
+
+     /* 1. On supprime le style par défaut du navigateur */
+
+     height: 10px;
+
+     /* 2. C'est ici que tu gères l'épaisseur (hauteur) */
+
+     background-color: #333;
+
+     /* 3. C'est ici que tu changes la couleur */
+
+     width: 80%;
+
+     /* 4. La taille de la ligne */
+
+     margin: 20px auto;
+
+     /* 5. Centrage et espacement vertical */
+     transition: 500ms ease-out;
+     border-radius: 20px;
+     display: inline-block;
+     outline: auto;
+
+ }
+
+ footer hr:hover {
+     background-color: white;
+     height: 22px;
+ }
+
+
+
+
+
+ /* --- Media Queries (Tablettes et Desktops) --- */
+
+
+
+ /* Si l'écran fait plus de 768px */
+
+ @media (min-width: 768px) {}
