@@ -309,6 +309,6 @@ footer hr:hover {
     }
 
     .fr-4 div {
-        align-items: flex-start;
+        align-items: center;
     }
 }
