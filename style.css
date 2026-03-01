@@ -212,359 +212,177 @@
      display: grid;
 
      grid-template-columns: 1fr;
-
      grid-template-rows: 3fr 3fr 1fr 3fr 2fr;
-
  }
-
-
 
  .fr-1 {
-
      display: grid;
-
      grid-template-columns: 2fr 1fr;
-
      grid-template-rows: 1fr;
-
      align-items: center;
-
      justify-items: center;
-
      gap: 0;
-
      margin: 0;
-
      padding: 0;
-
  }
-
-
 
  .fr-1 img {
-
-     max-width: 100%;
-
-     padding: 0;
-
+     max-width: 100% padding: 0;
      margin: 0;
-
  }
-
-
 
  .fr-1 div {
-
      padding: 10px 30px;
-
      background: lab(32.89% 8.13 -0.27);
-
      height: 100%;
-
      width: 100%;
-
      display: flex;
-
      flex-direction: column;
-
      justify-content: center;
-
      align-items: center;
-
      gap: 3rem;
-
      border: 1px solid white;
-
  }
-
-
 
  .fr-1 div h2 {
-
      font-family: "Cherry Bomb One";
-
      font-size: 4rem;
-
      font-weight: bolder;
-
-
-
  }
-
-
 
  .fr-1 div p {
-
      font-size: 1.4rem;
-
      border-left: 5px solid #7c6e72;
-
      padding-left: 20px;
-
  }
-
-
 
  .fr-2 {
-
      display: grid;
-
      grid-template-columns: repeat(3, 1fr);
-
      grid-template-rows: 1fr;
-
      align-items: center;
-
      justify-items: center;
-
      gap: 0;
-
      margin: 0;
-
      padding: 0;
-
  }
-
-
 
  .fr-2 img {
-
      max-width: 100%;
-
      padding: 0;
-
      margin: 0;
-
  }
-
-
 
  .fr-2 div {
-
      padding: 10px 30px;
-
      background: lab(32.89% 8.13 -0.27);
-
      height: 100%;
-
      width: 100%;
-
      display: flex;
-
      flex-direction: column;
-
      justify-content: center;
-
      align-items: center;
-
      gap: 3rem;
-
      border: 1px solid white;
-
  }
-
-
 
  .fr-2 div h2 {
-
      font-family: "Cherry Bomb One";
-
      font-size: 4rem;
-
      font-weight: bolder;
-
  }
-
-
 
  .fr-2 div p {
-
      font-size: 1.4rem;
-
      border-left: 5px solid #7c6e72;
-
      padding-left: 20px;
-
  }
-
-
 
  .fr-3 {
-
      display: grid;
-
      grid-template-columns: 1fr 2fr;
-
      grid-template-rows: 1fr;
-
      align-items: center;
-
      justify-items: center;
-
      gap: 0;
-
      margin: 0;
-
      padding: 0;
-
  }
-
-
 
  .fr-3 img {
-
      max-width: 100%;
-
      padding: 0;
-
      margin: 0;
-
  }
-
-
 
  .fr-3 div {
-
      background: lab(32.89% 8.13 -0.27);
-
      height: 100%;
-
      width: 100%;
-
      display: flex;
-
      flex-direction: column;
-
      align-content: center;
-
      justify-content: center;
-
      gap: 18px;
-
      padding: 0 30px;
-
      border: 1px solid white;
-
  }
-
-
 
  .fr-3 div h2 {
-
      font-family: "Cherry Bomb One";
-
      font-size: 4rem;
-
      font-weight: bolder;
-
  }
-
-
 
  .fr-3 div h4 {
-
      font-family: "Cherry Bomb One";
-
      font-size: 2rem;
-
      font-weight: bolder;
-
  }
-
-
 
  .fr-3 div p {
-
      font-size: 1.4rem;
-
      border-left: 5px solid #7c6e72;
-
      padding-left: 20px;
-
  }
-
-
-
- .fr-3 div hr {
-
-     color: ;
-
- }
-
-
 
  .fr-4 {
-
      display: flex;
-
      align-items: center;
-
      justify-content: center;
-
      background: aqua;
-
      padding: 20rem;
-
      border: 1px solid white;
-
  }
-
-
 
  .fr-4 div {
-
      display: flex;
-
      flex-direction: column;
-
      justify-content: center;
-
      align-items: center;
-
      gap: 30px;
-
  }
-
-
 
  .fr-4 div p {
-
      font-size: 1.2rem;
-
  }
-
-
 
  .fr-4 div h2 {
-
      font-family: "Cherry Bomb One";
-
      font-size: 4rem;
-
      font-weight: bolder;
-
  }
-
-
 
  .fr-4 div a {
 
      background-color: #7c6e72;
-
      text-decoration: none;
-
      padding: 20px;
-
      border-radius: 20px;
-
      display: inline-block;
-
      color: black;
-
      font-weight: 700;
-
      font-size: 1.2rem;
-
      transition: 500ms ease-in;
 
  }
@@ -574,10 +392,9 @@
  .fr-4 div a:hover {
 
      color: gray;
-
      background-color: white;
-
      box-shadow: 0 0 20px 3px black;
+     outline: auto;
 
  }
 
@@ -635,13 +452,12 @@
      transition: 500ms ease-out;
      border-radius: 20px;
      display: inline-block;
-     outline: auto;
-
  }
 
  footer hr:hover {
      background-color: white;
      height: 22px;
+     outline: auto;
  }
 
 
